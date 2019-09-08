@@ -22,7 +22,7 @@ spec:
           containers:
           - name: backup-bitbucket-s3
             imagePullPolicy: Always
-            image: bouwe/bitbucket-backups:0.0.1
+            image: bouwe/bitbucket-backups-s3:0.0.1
             command: ['python3', '-u', 'backup.py']
             envFrom:
             - secretRef:
