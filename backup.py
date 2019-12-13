@@ -39,7 +39,7 @@ def backup(branch_name, repository):
         log(f'failed getting zip of branch {branch_name} from repository {repository} from {TEAM_NAME}, response:{str(response.text)}')
 
 def get_repositories():
-    page = f'https://api.bitbucket.org/2.0/repositories/{TEAM_NAME}'
+    page = f'https://api.bitbucket.org/2.0/repositories?role=member'
     repositories = []
     while True:
         request = requests.get(page, headers={'Authorization': f'Basic {basic_auth}'})
