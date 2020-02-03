@@ -1,4 +1,4 @@
-# bitbucket-backups
+# Bitbucket Backups
 Take backups of your Bitbucket repositories on AWS S3.
 
 Feel free to read about this with some more details on [Medium](https://medium.com/axons/essential-kubernetes-tools-94503209d1cb).
